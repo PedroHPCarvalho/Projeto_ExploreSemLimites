@@ -16,10 +16,53 @@ body
     margin-inline: auto;
 }
 
+#app
+{
+    max-width: 43rem;
+    margin-inline: auto;
+    background-color: rgb(224, 223, 223);
+}
+
+h1
+{
+    color: #B52184;
+    text-align: center;
+    font-family: Mulish, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+h2
+{
+    color: #312D64;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+p
+{
+    color: #312D64;
+    font-size: 16.042px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
 header
 {
 
 }
+
+header img astro
+{
+    width: 364px;
+    height: 370px;
+}
+
 
 main
 {
@@ -35,4 +78,6 @@ footer
 {
 
 }
+
+
 
