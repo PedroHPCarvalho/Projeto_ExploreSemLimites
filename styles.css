@@ -12,15 +12,22 @@
 
 body
 {
+    font-family: 'Mulish', sans-serif;
+    
     max-width: 43rem;
     margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
 }
 
 #app
 {
     max-width: 43rem;
-    margin-inline: auto;
-    background-color: rgb(224, 223, 223);
+    background-color: #F9F4FB;
 }
 
 h1
@@ -52,32 +59,97 @@ p
     line-height: normal;
 }
 
-header
-{
-
+header {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-header img astro
-{
+.astro {
     width: 364px;
     height: 370px;
+    margin-bottom: 1.7rem;
 }
 
-
-main
+header h1
 {
+    margin-bottom: .5rem;
+}
 
+header h2
+{
+    margin-bottom: 3.5rem;
+}
+
+.down-btn {
+    background: none;
+    border: none;
+    margin-bottom: 14.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+}
+
+.container1,
+.container2,
+.container3 {
+    margin: 5rem 3.9rem 0;
+    padding: 2.5rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+
+    border-radius: 19.865px;
+    background: #FFF;
+    box-shadow: 0px 3.31077px 13.24308px 0px rgba(0, 0, 0, 0.25);   
+}
+
+.container1 img,
+.container2 img,
+.container3 img 
+{
+    max-width: 100%;
+    margin-bottom: 2rem;   
+}
+.container1 h1,
+.container2 h1,
+.container3 h1 
+{
+    margin-bottom: .5rem;   
+}
+
+.container3
+{
+    margin-bottom: 5rem;
 }
 
 .contact
 {
-
+    background: #F9F4FB;
 }
 
-footer
+
+footer 
 {
-
+    padding: 1.6rem;
+    text-align: center;
+    margin-top: 2rem;
+    background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
 }
 
+footer p
+{
+    color: #FFF;
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
 
 
