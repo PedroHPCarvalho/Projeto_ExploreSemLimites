@@ -10,6 +10,11 @@
     font-size: 62.5%;
 }
 
+.none
+{
+    display: none;
+}
+
 body
 {
     font-family: 'Mulish', sans-serif;
@@ -59,6 +64,8 @@ p
     line-height: normal;
 }
 
+/* HEADER */
+
 header {
     text-align: center;
     margin-bottom: 2rem;
@@ -85,6 +92,8 @@ header h2
     border: none;
     margin-bottom: 14.5rem;
 }
+
+/* MAIN */
 
 main {
     display: flex;
@@ -128,10 +137,13 @@ main {
     margin-bottom: 5rem;
 }
 
+/* AREA DE CONTATO */
+
 .contact
 {
     background: #F9F4FB;
     margin-top: 7.8rem;
+   
 }
 
 form
@@ -149,11 +161,37 @@ form legend
 
 input
 {
-    border-radius: 16px;
-    border: 1.5px solid #312D64;
-    padding: 12px 16px 12px 14px;
+    border-radius: 1.6rem;
+    border: .2rem solid #312D64;
+    padding: 1.2rem 1.6rem 1.2rem 1.4rem;
 }
 
+input::placeholder
+{
+    color: #312D64;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+
+.contact button
+{
+    margin: 2.4rem 0 6.5rem 3.2rem;
+    padding: 1.6rem;
+
+    border-radius: 6rem;
+    background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+
+    color: white;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem; 
+    text-transform: capitalize;
+    border: none;
+}
+
+ /* FOOTER */
 
 footer 
 {
@@ -173,4 +211,101 @@ footer p
     line-height: normal;
 }
 
+@media (max-width: 1114px)
+{
+    body,#app
+    {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1115px)
+{
+    body,#app
+    {
+        max-width: 100%;
+    }
+
+
+    header
+    {
+      
+    }
+
+    main
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .container1,
+    .container2,
+    .container3 {
+        margin: 5rem 3.9rem 0;
+        padding: 2.5rem;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+
+        border-radius: 19.865px;
+        background: #FFF;
+        box-shadow: 0px 3.31077px 13.24308px 0px rgba(0, 0, 0, 0.25);   
+    }
+
+    .container1 img,
+    .container2 img,
+    .container3 img 
+    {
+        max-width: 100%;
+        margin-bottom: 2rem;   
+    }
+    .container1 h1,
+    .container2 h1,
+    .container3 h1 
+    {
+        margin-bottom: .5rem;   
+    }
+
+    .container1,
+    .container2,
+    .container3
+    {
+        margin-bottom: 6.4rem;
+    }
+
+    .none
+    {
+        display: flex;
+    }
+
+    .contact
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        background: url(./assets/image\ 11976.jpg) no-repeat;
+        background-position: right;
+        height: 61.4rem;
+    }
+
+    .contact-area
+    {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+
+    footer
+    {
+        margin: 0;
+    }
+
+}
 
